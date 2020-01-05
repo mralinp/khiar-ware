@@ -11,4 +11,10 @@ In this project we are trying ro read and write a running process memory to acce
 Project contains some main parts and some plug-ins that could be added to have more fun.(e.g auto Auto-Bhop and TriggerBot scripts)
 you can write your plug-ins and make your own custom cheat.
 
-
+## The engine, Memory Manager class
+This part is the base of the project, with this class we can read and write the process memory, so its
+a kind of handle for the current process running on the target computer.<br/>
+On windows we have Windows Application Program Interface (WinAPI), that allows us to have fun with
+the running processes on the OS. This is a library implimented for Windows operating system to
+allow us communicate with the operating system trough the c++ source code.<br/>
+for more Information about WinAPI refer to: https://en.wikipedia.org/wiki/Windows_API
