@@ -5,14 +5,12 @@
 #include <thread>
 memory_manager* mem;
 
-// Offsets
 
 #define m_dwLocalPlayer 0xD28B1C
 #define m_iTeamNum 0xF4
 #define m_iCrossHairID 0xB3D4
 #define m_dwEntityList 0x4D3C68C
 
-//End of offsets
 
 
 const char logo[][51] = {
@@ -32,28 +30,25 @@ void printLogo() {
 
 
 
-//Don't forget to include iostream!
 int main()
 {
-    mem = new memory_manager(); //Execute the constructor code
-	// Continue only if the user is holding space
+    mem = new memory_manager(); 
 	while (true) {
-	DWORD dwLocalPlayer = 0; // This will hold our local player base address
+	DWORD dwLocalPlayer = 0;
 	dwLocalPlayer = mem->Read<DWORD>(mem->ClientDLL_Base + m_dwLocalPlayer);
-	//printf("%d", dwLocalPlayer);
-	BYTE fFlags = 0; // This will hold the bitfield
+	BYTE fFlags = 0; 
 	fFlags = mem->Read<BYTE>(dwLocalPlayer + 0x104);
 	
 		if (GetAsyncKeyState(VK_SPACE) & 0x8000)
 		{
-			if (fFlags & (1 << 0)) // Check for FL_ONGROUND
+			if (fFlags & (1 << 0))
 			{
-				mem->Write(mem->ClientDLL_Base + 0x51DFEAC, 6); // Will force jump for 1 tick only
+				mem->Write(mem->ClientDLL_Base + 0x51DFEAC, 6);
 			}
 			printf("hello, world!");
 		}
 		Sleep(20);
 	}
-	//delete mem; //Don't forget to delete MemoryManager pointer, so it executes destructor and closes correctly the handle
-    return 0;
+	delete mem; 
+	return 0;
 }
