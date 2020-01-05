@@ -1,8 +1,6 @@
 //#pragma once
 #include <windows.h>
 #include <stdio.h>
-#include <iostream>
-#include <string>
 #include <tchar.h>
 #include <psapi.h>
 
