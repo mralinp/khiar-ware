@@ -1,7 +1,8 @@
-#include <iostream>
+#include "MemoryManager.h"
+
 using namespace std;
 
 int main() {
-	cout << "aljhd" << endl;
+	memory_manager mem;
 	return 0;
 }
