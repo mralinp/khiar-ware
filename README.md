@@ -1,5 +1,4 @@
-# KhiarWare(Windows Version) <under developement>
-## Preface 
+# KhiarWare(Windows Version) Wallhack Bhop TriggerBot
 This is project is an example of game hacking, and it's created to share the personal experiance with the other enthusiasts in this feild of software security.<br/>
 This project is just for educational porpuses and i'm not responsible of any other subversive application of this.<br/>
 As you know game hacking in online games is not allowed owing to annoying some other people. Normal players who want to just have fun with games and they don't want to face a demon hacker in their fun times, so game developers will response if you do somthing to annoy the other players or in other words Cheating in game by closeing your account(e.g VACation on steam platform).<br/>
