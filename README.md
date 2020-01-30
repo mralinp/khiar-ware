@@ -4,17 +4,7 @@ This is project is an example of game hacking, and it's created to share the per
 This project is just for educational porpuses and i'm not responsible of any other subversive application of this.<br/>
 As you know game hacking in online games is not allowed owing to annoying some other people. Normal players who want to just have fun with games and they don't want to face a demon hacker in their fun times, so game developers will response if you do somthing to annoy the other players or in other words Cheating in game by closeing your account(e.g VACation on steam platform).<br/>
 
-# Tutorial begins
-## intro
-In this project we are trying ro read and write a running process memory to accesss the willing outputs of the process. In this project we choose c++ programming language to do the magic so if you want to use this tutorial a brief background of c ++ is required. I'll explain my main approach (the main algorithm) in any part of the project. I used some methods from various c++ librarys that may some of you don't know what is that and how it works, so to make it clear to every one i brought a bunch a refrences to any kind of uncommon method that is used in each part, so read them to know much better. <br/>
+If you want to run the codes above, compile them with visual studio(i used 2019 edition), and be careful, i don't garranty that you get banned or not. To be safe and run the game in insecure mode that turns off the anti-cheat when running the game, but you cant join to VAC secure servers in this mode.(search about "CS:GO insecure mode" to know how to run on this mode)<br/>
 
-Project contains some main parts and some plug-ins that could be added to have more fun.(e.g auto Auto-Bhop and TriggerBot scripts)
-you can write your plug-ins and make your own custom cheat.
-
-## The engine, Memory Manager class
-This part is the base of the project, with this class we can read and write the process memory, so its
-a kind of handle for the current process running on the target computer.<br/>
-On windows we have Windows Application Program Interface (WinAPI), that allows us to have fun with
-the running processes on the OS. This is a library implimented for Windows operating system to
-allow us communicate with the operating system trough the c++ source code.<br/>
-for more Information about WinAPI refer to: https://en.wikipedia.org/wiki/Windows_API
+And an other thing you have to do before running the code is, replace all values in offset.h file with the updated values (other wise it would not work, becuase the addresses will be wrong).<br/>
+You can find the updated values on this link : https://github.com/frk1/hazedumper
