@@ -21,7 +21,7 @@ Then build an empty visual studio project and all of the source codes to the pro
 > note: after any CS:GO update, the offset values will change, so you have to replace them with the new values to get this code running. Fresh offsets can be easily found on [hazedumper](https://github.com/frk1/hazedumper). download the `csgo.hpp` file from this [repo](https://github.com/frk1/hazedumper) and rename all `constexpr ::std::ptrdiff_t` with `const DWORD` then remove the parent namespace. Just Delete `namespace hazedumper {` and the last `}`. Finaly replace `#include <cstdint>` with `#include <windows.h>`, and rename the file into `Offsets.h`. Now you have a new `Offsets.h` file, replace it with the original one in the sorce code then run to project, ez.
 
 ## Insecure Mode
-### For thoese who doesn't want to risk and it's recommened by me.
+### For those who doesn't want to risk and it's recommened by me.
 To run this code to see how it's working without any rish of getting VAC banned, you have to run the game on `insecure` mode. 
 
 To do this, open steam, go to library, `right-click` on **CS:GO** icon and choose properties, in  `General` tab you can see `Lunch options` button, click on that and add `-insecure` at the end of the line, done, press `ok` and close the propeties tab.
