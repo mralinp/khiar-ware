@@ -1,4 +1,5 @@
-# KhiarWare(Windows Version) Wallhack+Bhop+TriggerBot
+# KhiarWare(Windows Version)
+## WallHack + TriggerBot + RadarHack + AutoBhop
 ### Undetected
 This project is an example of game hacking, and it's created to share the personal experiance with the other enthusiasts in this feild of software security.<br/>
 This project is just for educational porpuses and i'm not responsible of any other subversive application of this.<br/>
