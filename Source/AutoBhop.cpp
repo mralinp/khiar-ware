@@ -1,5 +1,4 @@
 #include "AutoBhop.h"
-#include "Offsets.h"
 
 AutoBhop::AutoBhop() {
 	enable = false;
