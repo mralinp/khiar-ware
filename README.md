@@ -17,7 +17,7 @@ First download the source code:
 foo@bar~:$ git clone https://github.com/mralinp/KhiarWare.git  
 ```
 
-Then build an empty visual studio project and all of the source codes to the project. Now you are all set, press `run/debug` button to execute, enjoy!
+Then build an empty visual studio project and add all of the source codes to the project (files with `.h` to `Headers` and the `.cpp` files into the `Sources`). Now you are all set, press `run/debug` button to execute, enjoy!
 
 > note: after any CS:GO update, the offset values will change, so you have to replace them with the new values to get this code running. Fresh offsets can be easily found on [hazedumper](https://github.com/frk1/hazedumper). download the `csgo.hpp` file from this [repo](https://github.com/frk1/hazedumper) and rename all `constexpr ::std::ptrdiff_t` with `const DWORD` then remove the parent namespace. Just Delete `namespace hazedumper {` and the last `}`. Finaly replace `#include <cstdint>` with `#include <windows.h>`, and rename the file into `Offsets.h`. Now you have a new `Offsets.h` file, replace it with the original one in the sorce code then run to project, ez.
 
