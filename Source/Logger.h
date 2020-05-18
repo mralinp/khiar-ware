@@ -5,6 +5,7 @@
 #endif
 
 #include <string>
+#include <iostream>
 
 #define DEF 0
 #define WARN 1
