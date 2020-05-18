@@ -1,6 +1,9 @@
 #pragma once
-#include "MemoryManager.h"
+
+#include <random>
+#include <time.h>
 #include "ScriptBot.h"
+
 
 class TriggerBot:public ScriptBot{
 

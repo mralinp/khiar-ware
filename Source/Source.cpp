@@ -6,6 +6,7 @@
 #include "MemoryManager.h"
 #include "TriggerBot.h"
 #include "AutoBhop.h"
+#include "Radar.h"
 
 const int max_length = 50;
 
@@ -48,6 +49,15 @@ int main() {
 	SimpleGlow* glow = new SimpleGlow();
 	TriggerBot* trigger_bot = new TriggerBot();
 	AutoBhop* auto_bhop = new AutoBhop();
+	Radar* radar = new Radar();
+
+	logger->log(WARN, "Ready!");
+	logger->log(INFO, "These are toggle keys:");
+	logger->log(INFO, "\tWallHack: INSERT");
+	logger->log(INFO, "\tTriggerBot: HOME");
+	logger->log(INFO, "\tAutoBhop: PAGEUp");
+	logger->log(INFO, "\tRadarHack: PAGEDOWN");
+	logger->log(INFO, "\tExit: DELETE");
 
 	bool is_running = true;
 	int refresh_interval;
@@ -60,32 +70,41 @@ int main() {
 		auto_bhop->refresh(mem);
 		//It shoots when ALT key is DOWN
 		trigger_bot->refresh(mem);
+		//Refresh RadarHack
+		radar->refresh(mem);
 		switch (get_key()) {
-			// Exit when VK_DELETE pressed
+			// Exit when DEL pressed
 			case VK_DELETE: {
-				logger->log(WARN, "VK_DELETE pressed");
+				logger->log(WARN, "DELETE pressed");
 				is_running = false;
 				Sleep(150);
 				break;
 			}
-			// Toggle wall-hack when VK_INSERT pressed
+			// Toggle wall-hack with Insert key
 			case VK_INSERT: {
 				glow->toggle();
 				logger->log(WARN, "WallHack status: " + std::to_string(glow->status()));
 				Sleep(150);
 				break;
 			}
-			//Toggle TriggerBot with Home button
+			//Toggle TriggerBot with Home key
 			case VK_HOME: {
 				trigger_bot->toggle();
 				logger->log(WARN, "Trigger status: " + std::to_string(trigger_bot->status()));
 				Sleep(150);
 				break;
 			}
-			//Toggle AutoBhop with PageUp keys
+			//Toggle AutoBhop with PageUp key
 			case VK_PRIOR: {
 				auto_bhop->toggle();
-				logger->log(WARN, "Bhop Status: ");
+				logger->log(WARN, "Bhop Status: " + std::to_string(auto_bhop->status()));
+				Sleep(150);
+				break;
+			}
+			//Toggle Radar with PageDown key
+			case VK_NEXT: {
+				radar->toggle();
+				logger->log(WARN, "Radar Status: " + std::to_string(radar->status()));
 				Sleep(150);
 				break;
 			}

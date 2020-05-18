@@ -1,6 +1,4 @@
 #include "SimpleGlow.h"
-#include "MemoryManager.h"
-#include "Offsets.h"
 
 struct SimpleGlow::Glow_Struct {
 	BYTE base[4];

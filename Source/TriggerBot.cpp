@@ -1,7 +1,4 @@
 #include "TriggerBot.h"
-#include "Offsets.h"
-#include <random>
-#include <time.h>
 
 TriggerBot::TriggerBot(){
 	enable = false;
