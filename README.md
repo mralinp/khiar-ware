@@ -5,7 +5,7 @@ This project is an example of game hacking, and it's created to share the person
 This project is just for educational porpuses and i'm not responsible of any other subversive application of this.<br/>
 As you know game hacking in online games is not allowed owing to annoying some other people. Normal players who want to just have fun with games and they don't want to face a demon hacker in their fun times, so game developers will response if you do somthing to annoy the other players. In other words cheating in online game will cause your account be **banned** (e.g VACation on steam platform).<br/>
 
-![menu image](https://github.com/mralinp/KhiarWare/blob/master/demo.png)
+![menu image](demo.png)
 
 
 If you want to run the codes above, compile them with visual studio(i used 2019 edition), and be careful, i don't garranty that you get banned or not. To be safe while testing and running this code in game, just run the game in **insecure mode**. That turns off the Vlave anti-cheat when running the game, but you can't join any VAC secure servers while lunching the game on this mode. To do this just look at [Insecure Mode](#insecure-mode).
