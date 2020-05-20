@@ -8,7 +8,7 @@ As you know game hacking in online games is not allowed owing to annoying some o
 ![menu image](demo.png)
 
 
-If you want to run the codes above, compile them with visual studio(i used 2019 edition), and be careful, i don't garranty about getting banned or not. To be safe while testing and running this code in game, just run the game in **insecure mode**. That turns off the Vlave anti-cheat when running the game, but you can't join any VAC secure servers while lunching the game on this mode. To do this just look at [Insecure Mode](#insecure-mode).
+If you want to run the codes above, compile them with visual studio(i used 2019 edition), and be careful, i don't guarantee about getting banned or not. To be safe while testing and running this code in game, just run the game in **insecure mode**. That turns off the Valve anti-cheat when running the game, but you can't join any VAC secure servers while lunching the game on this mode. To do this just look at [Insecure Mode](#insecure-mode).
 
 # How to user this code
 
@@ -27,7 +27,7 @@ To run this code to see how it's working without any rish of getting VAC banned,
 
 To do this, open steam, go to library, `right-click` on **CS:GO** icon and choose properties, in  `General` tab you can see `Lunch options` button, click on that and add `-insecure` at the end of the line, done, press `ok` and close the propeties tab.
 
-just remember that for playing normally after testing this code, just remove `-insecure` from `lunch options`, this will anables anti-cheat and you are able to play at VAC secure servers.
+just remember that for playing normally after testing this code, just remove `-insecure` from `lunch options`, this will enables anti-cheat and you are able to play at VAC secure servers.
 
 If you saw that every thing is fine, and it's working good, you can use this code on `normal mode`, **competetive** or anywhere else, but at you own risk, be careful of being obvious and remember that overwatch is everywhere.
 
