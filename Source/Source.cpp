@@ -46,10 +46,10 @@ int main() {
 	MemoryManager* mem = new MemoryManager(logger);
 
 	mem->read<DWORD>(mem->get_client_base());
-	SimpleGlow* glow = new SimpleGlow();
-	TriggerBot* trigger_bot = new TriggerBot();
-	AutoBhop* auto_bhop = new AutoBhop();
-	Radar* radar = new Radar();
+	SimpleGlow* glow = new SimpleGlow(mem);
+	TriggerBot* trigger_bot = new TriggerBot(mem);
+	AutoBhop* auto_bhop = new AutoBhop(mem);
+	Radar* radar = new Radar(mem);
 
 	logger->log(WARN, "Ready!");
 	logger->log(INFO, "These are toggle keys:");
@@ -65,13 +65,13 @@ int main() {
 		refresh_interval = rand()%10;
 		refresh_interval = (refresh_interval < 0) ? refresh_interval + 10: refresh_interval;
 		Sleep(refresh_interval);
-		glow->refresh(mem);
+		glow->refresh();
 		//Jump while Space key is pressed
-		auto_bhop->refresh(mem);
+		auto_bhop->refresh();
 		//It shoots when ALT key is DOWN
-		trigger_bot->refresh(mem);
+		trigger_bot->refresh();
 		//Refresh RadarHack
-		radar->refresh(mem);
+		radar->refresh();
 		switch (get_key()) {
 			// Exit when DEL pressed
 			case VK_DELETE: {

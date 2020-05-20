@@ -5,14 +5,12 @@
 bool MemoryManager:: check_process(DWORD proc) {
     TCHAR pname[MAX_PATH] = TEXT("<UnKnown>");
     HANDLE handle = OpenProcess(PROCESS_QUERY_INFORMATION | PROCESS_VM_READ, FALSE, proc);
-    if (NULL != handle) {
+    if (handle != NULL) {
         HMODULE hMod;
         DWORD cbNeeded;
         if (EnumProcessModules(handle, &hMod, sizeof(hMod), &cbNeeded)) {
             GetModuleBaseName(handle, hMod, pname, sizeof(pname) / sizeof(TCHAR));
         }
-    }
-    if (handle != 0) {
         CloseHandle(handle);
     }
     if (!_tcscmp(TEXT(PROCESS_NAME), pname)) {
@@ -69,12 +67,13 @@ MODULEENTRY32 MemoryManager::get_module(const char* mname) {
     modNameChar = new WCHAR[nChars];
     MultiByteToWideChar(CP_ACP, 0, mname, -1, (LPWSTR)modNameChar, nChars);
 
-    do
+    do {
         if (!wcscmp(m.szModule, modNameChar))
         {
             CloseHandle(h);
             return m;
         }
+    }
     while (Module32Next(h, &m));
 
     CloseHandle(h);

@@ -11,17 +11,24 @@ protected:
 	DWORD localPlayerTeamNum;
 	DWORD entity_team_num;
 	DWORD entity;
-	DWORD dwLocalPlayer;
-	DWORD LocalPlayer_inCross;
-	DWORD LocalPlayer_Team;
+	DWORD localPlayer;
+	DWORD localPlayer_inCross;
+	DWORD localPlayer_team;
 	BYTE fFlags;
-	DWORD Trigger_EntityBase;
-	DWORD Trigger_EntityTeam;
-	bool Trigger_EntityDormant;
-	DWORD glow_obj;
+	DWORD glowObj;
+	MemoryManager* mem;
+
+	bool isDormant(DWORD player);
+	DWORD getTeamNum(DWORD player);
+	DWORD getLocalPlayer();
+	DWORD getIcrosshair(DWORD player);
+	DWORD getEntity(DWORD entityNum);
+	DWORD getHealth(DWORD player);
+	DWORD getFFlags();
+	
 public:
-	ScriptBot();
-	virtual void refresh(MemoryManager* mem) = 0;
+	ScriptBot(MemoryManager* mem);
+	virtual void refresh() = 0;
 	bool status();
 	void toggle();
 };

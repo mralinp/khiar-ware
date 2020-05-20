@@ -1,20 +1,19 @@
 #include "ScriptBot.h"
 
-ScriptBot::ScriptBot() {
+ScriptBot::ScriptBot(MemoryManager* memoryManager) : mem{memoryManager} {
+
 	enable = false;
 	glowIdx = 0x00;
 	health = 0x00;
 	localPlayerTeamNum = 0x00;
 	entity_team_num = 0x00;
 	entity = 0x00;
-	dwLocalPlayer = 0x00;
-	LocalPlayer_inCross = 0x00;
-	LocalPlayer_Team = 0x00;
+	localPlayer = 0x00;
+	localPlayer_inCross = 0x00;
+	localPlayer_team = 0x00;
 	fFlags = 0x00;
-	Trigger_EntityBase = 0x00;
-	Trigger_EntityTeam = 0x00;
-	Trigger_EntityDormant = 0x00;
-	glow_obj = 0x00;
+	glowObj = 0x00;
+
 }
 
 void ScriptBot::toggle() {
@@ -23,4 +22,35 @@ void ScriptBot::toggle() {
 
 bool ScriptBot::status() {
 	return this->enable;
+}
+
+bool ScriptBot::isDormant(DWORD player) {
+	return mem->read<bool>(player + signatures::m_bDormant);
+}
+
+DWORD ScriptBot::getTeamNum(DWORD player) {
+	return mem->read<DWORD>(player + netvars::m_iTeamNum);
+}
+
+
+
+DWORD ScriptBot::getLocalPlayer() {
+	return mem->read<DWORD>(mem->get_client_base() + signatures::dwLocalPlayer);
+}
+
+DWORD ScriptBot::getIcrosshair(DWORD player) {
+	return mem->read<DWORD>(localPlayer + netvars::m_iCrosshairId);
+}
+
+DWORD ScriptBot::getEntity(DWORD entityNum){
+	return mem->read<DWORD>(mem->get_client_base() + signatures::dwEntityList + entityNum * 0x10);
+}
+
+
+DWORD ScriptBot::getHealth(DWORD player) {
+	return  mem->read<DWORD>(player + netvars::m_iHealth);
+}
+
+DWORD ScriptBot::getFFlags() {
+	return mem->read<BYTE>(localPlayer + netvars::m_fFlags);
 }

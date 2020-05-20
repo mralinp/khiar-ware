@@ -6,9 +6,9 @@
 
 
 class TriggerBot:public ScriptBot{
-
+	void Shoot();
 public:
-	TriggerBot();
-	void refresh(MemoryManager* mem);
+	TriggerBot(MemoryManager* memoryManager);
+	void refresh();
 };
 

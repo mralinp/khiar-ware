@@ -1,15 +1,20 @@
 #include "AutoBhop.h"
 
-AutoBhop::AutoBhop() {
+AutoBhop::AutoBhop(MemoryManager* memoryManager): ScriptBot(memoryManager) {
 	enable = false;
 }
 
-void AutoBhop::refresh(MemoryManager* mem) {
+void AutoBhop::refresh() {
+	
 	if (enable && GetAsyncKeyState(VK_SPACE)){
-		this->dwLocalPlayer = mem->read<DWORD>(mem->get_client_base() + signatures::dwLocalPlayer);
-		fFlags = mem->read<BYTE>(dwLocalPlayer + netvars::m_fFlags);
+		localPlayer = getLocalPlayer();
+		fFlags = getFFlags();
 		if (fFlags & (1 << 0)) {
-			mem->write(mem->get_client_base() + signatures::dwForceJump, 6);
+			forceJump();
 		}
 	}
+}
+
+void AutoBhop::forceJump() {
+	mem->write(mem->get_client_base() + signatures::dwForceJump, 6);
 }

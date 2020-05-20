@@ -2,7 +2,8 @@
 #include "ScriptBot.h"
 
 class AutoBhop :public ScriptBot {
+	void forceJump();
 public:
-	AutoBhop();
-	void refresh(MemoryManager* mem);
+	AutoBhop(MemoryManager* memoryManger);
+	void refresh();
 };

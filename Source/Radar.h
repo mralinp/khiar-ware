@@ -2,7 +2,9 @@
 #include "ScriptBot.h"
 
 class Radar :public ScriptBot {
+private: 
+	void setSpotted(DWORD player);
 public:
-	Radar();
-	void refresh(MemoryManager* mem);
+	Radar(MemoryManager* memoryManager);
+	void refresh();
 };
