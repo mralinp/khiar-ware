@@ -8,7 +8,7 @@ As you know game hacking in online games is not allowed owing to annoying some o
 ![menu image](demo.png)
 
 
-If you want to run the codes above, compile them with visual studio(i used 2019 edition), and be careful, i don't guarantee about getting banned or not. To be safe while testing and running this code in game, just run the game in **insecure mode**. That turns off the Valve anti-cheat when running the game, but you can't join any VAC secure servers while lunching the game on this mode. To do this just look at [Insecure Mode](#insecure-mode).
+If you want to run the codes above, compile them with visual studio(i used 2019 edition), and be careful, i don't guarantee about getting banned or not. To be safe while testing and running this code in game, just run the game in **insecure mode**. That turns off the Valve anti-cheat when running the game, but you can't join any VAC secure servers while launching the game on this mode. To do this just look at [Insecure Mode](#insecure-mode).
 
 # How to user this code
 
