@@ -25,9 +25,9 @@ Then build an empty visual studio project and add all of the source codes into t
 ### For those who doesn't want to risk and it's recommened by me.
 To run this code to see how it's working without any rish of getting VAC banned, you have to run the game on `insecure` mode. 
 
-To do this, open steam, go to library, `right-click` on **CS:GO** icon and choose properties, in  `General` tab you can see `Lunch options` button, click on that and add `-insecure` at the end of the line, done, press `ok` and close the propeties tab.
+To do this, open steam, go to library, `right-click` on **CS:GO** icon and choose properties, in  `General` tab you can see `Launch options` button, click on that and add `-insecure` at the end of the line, done, press `ok` and close the propeties tab.
 
-just remember that for playing normally after testing this code, just remove `-insecure` from `lunch options`, this will enables anti-cheat and you are able to play at VAC secure servers.
+just remember that for playing normally after testing this code, just remove `-insecure` from `launch options`, this will enables anti-cheat and you are able to play at VAC secure servers.
 
 If you saw that every thing is fine, and it's working good, you can use this code on `normal mode`, **competetive** or anywhere else, but at you own risk, be careful of being obvious and remember that overwatch is everywhere.
 
