@@ -34,5 +34,5 @@ If you saw that every thing is fine, and it's working good, you can use this cod
 > note: I will fix the offsets problem with an auto updater and add more features to this code, as soon as i have some free times. If you've seen any issues just tell me to fix them or if you have got any errors, just share it on issues list, Thank you!
 
 ## Releases
-V2.2 is now out, it concluded a WallHack,  RadarHack, TriggerBot and a Bhop script. it's working on matchmaking and other servers. 
+V2.2 is now out and, it includes a WallHack,  RadarHack, TriggerBot and a Bhop script. it's working on matchmaking and other servers. 
 you can download the binary files from [releases page](https://github.com/mralinp/KhiarWare/releases).
