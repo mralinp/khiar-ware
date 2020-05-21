@@ -26,7 +26,7 @@ void SimpleGlow::refresh() {
 		localPlayerTeamNum = getTeamNum(localPlayer);
 		glowObj = getGlowObj();
 		// Assume that at must we have 64 players, loop over all and 64 is not a such thing that cause extra complexity for our code
-		for (DWORD i = 0; i < 65; i++) {
+		for (DWORD i = 0; i < 33 ; i++) {
 			entity = getEntity(i);
 			// This can be 0x00 due to MemoryManager::read function itself!
 			// we are always counting 0 to 64 so if the server has 24 client at most, the values of 24, 25, ..., 64 will be null or 0x00 
