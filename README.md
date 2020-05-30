@@ -18,7 +18,7 @@ First of all download the source codes:
 foo@bar~:$ git clone https://github.com/mralinp/KhiarWare.git  
 ```
 
-Then run `updater.py`, this will automatically updates offset values into `Source/Offsets.h` file and you have to have `requests` library installed to run this as well:
+Then run `updater.py`, this will automatically update offset values into `Source/Offsets.h` file and you have to have `requests` library installed to run this as well:
 
 ```console
 foo@bar~:$ pip install requests
