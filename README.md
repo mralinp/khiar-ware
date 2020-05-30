@@ -13,14 +13,16 @@ If you want to run the codes above, compile them with visual studio(i used 2019 
 # How to use this code
 
 First of all download the source codes:
+
 ```console
 foo@bar~:$ git clone https://github.com/mralinp/KhiarWare.git  
 ```
 
 Then run `updater.py`, this will automatically updates offset values into `Source/Offsets.h` file and you have to `requests` library for pythons to run this as well:
+
 ```console
-  foo@bar~:$ pip install requests
-  foo@bar~:$ python updater.py
+foo@bar~:$ pip install requests
+foo@bar~:$ python updater.py
 ```
 
 Finally create an empty visual studio project and add all of the source codes into the project (files with `.h` to `Headers` and the `.cpp` files into the `Sources`). Now you are all set, press `run/debug` button to execute, enjoy!
