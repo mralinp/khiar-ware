@@ -2,7 +2,6 @@
 
 #include <windows.h>
 
-
 namespace netvars {
 	const DWORD cs_gamerules_data = 0x0;
 	const DWORD m_ArmorValue = 0xB368;
