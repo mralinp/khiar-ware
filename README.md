@@ -12,14 +12,19 @@ If you want to run the codes above, compile them with visual studio(i used 2019 
 
 # How to use this code
 
-First download the source code:
+First of all download the source codes:
 ```console
 foo@bar~:$ git clone https://github.com/mralinp/KhiarWare.git  
 ```
 
-Then build an empty visual studio project and add all of the source codes into the project (files with `.h` to `Headers` and the `.cpp` files into the `Sources`). Now you are all set, press `run/debug` button to execute, enjoy!
+Then run `updater.py`, this will automatically updates offset values into `Source/Offsets.h` file and you have to `requests` library for pythons to run this as well:
+```console
+  foo@bar~:$ pip install requests
+  foo@bar~:$ python updater.py
+```
 
-> note: after any CS:GO update, the offset values will change, so you have to replace them with the new values to get this code running. Fresh offsets can be easily found on [hazedumper](https://github.com/frk1/hazedumper). download the `csgo.hpp` file from this [repo](https://github.com/frk1/hazedumper) and rename all `constexpr ::std::ptrdiff_t` with `const DWORD` then remove the parent namespace. Just Delete `namespace hazedumper {` and the last `}`. Finaly replace `#include <cstdint>` with `#include <windows.h>`, and rename the file to `Offsets.h`. Now you have a new `Offsets.h` file, replace it with the original one in the sorce code then run the project, ez.
+Finally create an empty visual studio project and add all of the source codes into the project (files with `.h` to `Headers` and the `.cpp` files into the `Sources`). Now you are all set, press `run/debug` button to execute, enjoy!
+
 
 ## Insecure Mode
 ### For those who doesn't want to risk and it's recommened by me.
