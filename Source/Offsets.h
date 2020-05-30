@@ -2,6 +2,7 @@
 
 #include <windows.h>
 
+
 namespace netvars {
 	const DWORD cs_gamerules_data = 0x0;
 	const DWORD m_ArmorValue = 0xB368;
@@ -88,7 +89,7 @@ namespace netvars {
 	const DWORD m_vecVelocity = 0x114;
 	const DWORD m_vecViewOffset = 0x108;
 	const DWORD m_viewPunchAngle = 0x3020;
-}
+} // namespace netvars
 namespace signatures {
 	const DWORD anim_overlays = 0x2980;
 	const DWORD clientstate_choked_commands = 0x4D28;
@@ -96,7 +97,7 @@ namespace signatures {
 	const DWORD clientstate_last_outgoing_command = 0x4D24;
 	const DWORD clientstate_net_channel = 0x9C;
 	const DWORD convar_name_hash_table = 0x2F0F8;
-	const DWORD dwClientState = 0x589DCC;
+	const DWORD dwClientState = 0x589DD4;
 	const DWORD dwClientState_GetLocalPlayer = 0x180;
 	const DWORD dwClientState_IsHLTV = 0x4D40;
 	const DWORD dwClientState_Map = 0x28C;
@@ -105,46 +106,46 @@ namespace signatures {
 	const DWORD dwClientState_PlayerInfo = 0x52B8;
 	const DWORD dwClientState_State = 0x108;
 	const DWORD dwClientState_ViewAngles = 0x4D88;
-	const DWORD dwEntityList = 0x4D43AC4;
-	const DWORD dwForceAttack = 0x3175068;
-	const DWORD dwForceAttack2 = 0x3175074;
-	const DWORD dwForceBackward = 0x31750A4;
-	const DWORD dwForceForward = 0x3175080;
-	const DWORD dwForceJump = 0x51ED760;
-	const DWORD dwForceLeft = 0x3175098;
-	const DWORD dwForceRight = 0x31750BC;
+	const DWORD dwEntityList = 0x4D4B144;
+	const DWORD dwForceAttack = 0x317C72C;
+	const DWORD dwForceAttack2 = 0x317C738;
+	const DWORD dwForceBackward = 0x317C6E4;
+	const DWORD dwForceForward = 0x317C750;
+	const DWORD dwForceJump = 0x51F4DC0;
+	const DWORD dwForceLeft = 0x317C6D8;
+	const DWORD dwForceRight = 0x317C6FC;
 	const DWORD dwGameDir = 0x6286F8;
-	const DWORD dwGameRulesProxy = 0x5260A3C;
-	const DWORD dwGetAllClasses = 0xD55F2C;
-	const DWORD dwGlobalVars = 0x589AD0;
-	const DWORD dwGlowObjectManager = 0x528B8A0;
-	const DWORD dwInput = 0x5195070;
-	const DWORD dwInterfaceLinkList = 0x8FA4A4;
-	const DWORD dwLocalPlayer = 0xD2FB94;
-	const DWORD dwMouseEnable = 0xD35738;
-	const DWORD dwMouseEnablePtr = 0xD35708;
-	const DWORD dwPlayerResource = 0x317340C;
-	const DWORD dwRadarBase = 0x5178834;
-	const DWORD dwSensitivity = 0xD355D4;
-	const DWORD dwSensitivityPtr = 0xD355A8;
-	const DWORD dwSetClanTag = 0x89ED0;
-	const DWORD dwViewMatrix = 0x4D35404;
-	const DWORD dwWeaponTable = 0x5195B34;
+	const DWORD dwGameRulesProxy = 0x52680AC;
+	const DWORD dwGetAllClasses = 0xD5CF8C;
+	const DWORD dwGlobalVars = 0x589AD8;
+	const DWORD dwGlowObjectManager = 0x5292F18;
+	const DWORD dwInput = 0x519C6D8;
+	const DWORD dwInterfaceLinkList = 0x8FFAC4;
+	const DWORD dwLocalPlayer = 0xD36B94;
+	const DWORD dwMouseEnable = 0xD3C738;
+	const DWORD dwMouseEnablePtr = 0xD3C708;
+	const DWORD dwPlayerResource = 0x317AA7C;
+	const DWORD dwRadarBase = 0x517FE9C;
+	const DWORD dwSensitivity = 0xD3C5D4;
+	const DWORD dwSensitivityPtr = 0xD3C5A8;
+	const DWORD dwSetClanTag = 0x89F00;
+	const DWORD dwViewMatrix = 0x4D3CA74;
+	const DWORD dwWeaponTable = 0x519D19C;
 	const DWORD dwWeaponTableIndex = 0x325C;
-	const DWORD dwYawPtr = 0xD35398;
-	const DWORD dwZoomSensitivityRatioPtr = 0xD3A5E0;
-	const DWORD dwbSendPackets = 0xD3ECA;
+	const DWORD dwYawPtr = 0xD3C398;
+	const DWORD dwZoomSensitivityRatioPtr = 0xD415E0;
+	const DWORD dwbSendPackets = 0xD3EFA;
 	const DWORD dwppDirect3DDevice9 = 0xA7030;
-	const DWORD find_hud_element = 0x2EB7C3F0;
-	const DWORD force_update_spectator_glow = 0x3991F2;
+	const DWORD find_hud_element = 0x2EAFFD40;
+	const DWORD force_update_spectator_glow = 0x39CB92;
 	const DWORD interface_engine_cvar = 0x3E9EC;
-	const DWORD is_c4_owner = 0x3A59C0;
+	const DWORD is_c4_owner = 0x3A93A0;
 	const DWORD m_bDormant = 0xED;
 	const DWORD m_flSpawnTime = 0xA360;
 	const DWORD m_pStudioHdr = 0x294C;
-	const DWORD m_pitchClassPtr = 0x5178AD8;
-	const DWORD m_yawClassPtr = 0xD35398;
-	const DWORD model_ambient_min = 0x58CE44;
-	const DWORD set_abs_angles = 0x1CF1D0;
-	const DWORD set_abs_origin = 0x1CF010;
+	const DWORD m_pitchClassPtr = 0x5180140;
+	const DWORD m_yawClassPtr = 0xD3C398;
+	const DWORD model_ambient_min = 0x58CE4C;
+	const DWORD set_abs_angles = 0x1D2B60;
+	const DWORD set_abs_origin = 0x1D29A0;
 }
