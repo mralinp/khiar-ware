@@ -38,4 +38,4 @@ just remember that for playing normally after testing this code, just remove `-i
 
 If you saw that every thing is fine, and it's working good, you can use this code on `normal mode`, **competetive** or anywhere else, but at you own risk, be careful of being obvious and remember that overwatch is everywhere.
 
-> note: I will fix the offsets problem with an auto updater and add more features to this code, as soon as i have some free times. If you've seen any issues just tell me to fix them or if you have got any errors, just share it on issues list, Thank you!
+> note: If you've seen any issues just tell me to fix them or if you have got any errors, just share it on issues list, Thank you!
