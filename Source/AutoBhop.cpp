@@ -9,7 +9,7 @@ void AutoBhop::refresh() {
 	if (enable && GetAsyncKeyState(VK_SPACE)){
 		localPlayer = getLocalPlayer();
 		fFlags = getFFlags();
-		if (fFlags & (1 << 0)) {
+		if (fFlags & 1) {
 			forceJump();
 		}
 	}
