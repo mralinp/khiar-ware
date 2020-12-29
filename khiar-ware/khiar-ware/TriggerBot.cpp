@@ -13,7 +13,7 @@ void TriggerBot::refresh() {
 		entity_team_num = getTeamNum(entity);
 
 		//Send an external click to shoot the target
-		// We dont wan't to shoot a dead man ok? so the dormant must be false!
+		// We don't want to shoot a person behind the wall. Use dormant!
 		if ((localPlayer_inCross > 0 && localPlayer_inCross < 65) && (entity != NULL) && (entity_team_num != localPlayer_team)) {
 			Shoot();
 		}

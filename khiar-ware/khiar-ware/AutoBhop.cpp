@@ -16,5 +16,5 @@ void AutoBhop::refresh() {
 }
 
 void AutoBhop::forceJump() {
-	mem->write(mem->get_client_base() + signatures::dwForceJump, 6);
+	mem->write(mem->get_client_base() + signitures::dwForceJump, 6);
 }

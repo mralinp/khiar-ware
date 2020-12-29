@@ -50,7 +50,7 @@ void SimpleGlow::refresh() {
 }
 
 DWORD SimpleGlow::getGlowObj(){
-	return mem->read<DWORD>(mem->get_client_base() + signatures::dwGlowObjectManager);
+	return mem->read<DWORD>(mem->get_client_base() + signitures::dwGlowObjectManager);
 }
 
 DWORD SimpleGlow::getGlowIdx(DWORD player) {

@@ -25,7 +25,7 @@ bool ScriptBot::status() {
 }
 
 bool ScriptBot::isDormant(DWORD player) {
-	return mem->read<bool>(player + signatures::m_bDormant);
+	return mem->read<bool>(player + signitures::m_bDormant);
 }
 
 DWORD ScriptBot::getTeamNum(DWORD player) {
@@ -35,7 +35,7 @@ DWORD ScriptBot::getTeamNum(DWORD player) {
 
 
 DWORD ScriptBot::getLocalPlayer() {
-	return mem->read<DWORD>(mem->get_client_base() + signatures::dwLocalPlayer);
+	return mem->read<DWORD>(mem->get_client_base() + signitures::dwLocalPlayer);
 }
 
 DWORD ScriptBot::getIcrosshair(DWORD player) {
@@ -43,7 +43,7 @@ DWORD ScriptBot::getIcrosshair(DWORD player) {
 }
 
 DWORD ScriptBot::getEntity(DWORD entityNum){
-	return mem->read<DWORD>(mem->get_client_base() + signatures::dwEntityList + entityNum * 0x10);
+	return mem->read<DWORD>(mem->get_client_base() + signitures::dwEntityList + entityNum * 0x10);
 }
 
 

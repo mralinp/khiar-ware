@@ -114,7 +114,7 @@ int main() {
 		}
 	}
 
-	logger->log(INFO, "Go learn how to play idiot!");
+	logger->log(INFO, "Go learn how to play, idiot!");
 
 	return 0;
 }
