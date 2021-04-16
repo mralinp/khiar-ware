@@ -1,6 +1,5 @@
 # KhiarWare(Windows Version)
 ## WallHack + TriggerBot + RadarHack + AutoBhop
-### Undetected
 This project is an example of game hacking, and it's created to share the personal experience with other enthusiasts in this branch of software security.<br/>
 This project is just for educational porpuses and i'm not responsible for any other subversive applications.<br/>
 As you know game hacking in online games is not allowed owing to annoying some other people. Normal players who just want to have fun with games, don't want to face a demon hacker in their fun times, so game developers will respond if you do somthing to annoy other players. In other words cheating in online games will cause your account be **banned** (e.g VACation on steam platform).<br/>
