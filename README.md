@@ -38,4 +38,4 @@ just remember that for playing normally after testing this code, just remove `-i
 
 If you saw that every thing is fine, and it's working good, you can use this code on `normal mode`, **competetive** or anywhere else, but at you own risk, be careful of being obvious and remember that overwatch is everywhere.
 
-> note: If you've seen any issues just tell me to fix them or if you have got any errors, just share it on issues list, Thank you!
+> Attention!: Due to CS:GO updates, this source code needs to be updated and adapted with the newest changes, but you can stiil use some parts as a sample of CS:GO cheat.
