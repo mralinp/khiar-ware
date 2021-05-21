@@ -1,6 +1,5 @@
 # KhiarWare(Windows Version)
 ## WallHack + TriggerBot + RadarHack + AutoBhop
-### Undetected
 This project is an example of game hacking, and it's created to share the personal experience with other enthusiasts in this branch of software security.<br/>
 This project is just for educational porpuses and i'm not responsible for any other subversive applications.<br/>
 As you know game hacking in online games is not allowed owing to annoying some other people. Normal players who just want to have fun with games, don't want to face a demon hacker in their fun times, so game developers will respond if you do somthing to annoy other players. In other words cheating in online games will cause your account be **banned** (e.g VACation on steam platform).<br/>
@@ -38,4 +37,4 @@ just remember that for playing normally after testing this code, just remove `-i
 
 If you saw that every thing is fine, and it's working good, you can use this code on `normal mode`, **competetive** or anywhere else, but at you own risk, be careful of being obvious and remember that overwatch is everywhere.
 
-> note: If you've seen any issues just tell me to fix them or if you have got any errors, just share it on issues list, Thank you!
+> Attention!: Due to CS:GO updates, this source code needs to be updated and adapted with the newest changes, but you can stiil use some parts as a sample of CS:GO cheat.
