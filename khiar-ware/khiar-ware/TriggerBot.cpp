@@ -1,9 +1,5 @@
 #include "TriggerBot.h"
 
-TriggerBot::TriggerBot(MemoryManager* memoryManager) : ScriptBot(memoryManager){
-	enable = false;
-}
-
 void TriggerBot::refresh() {
 	if (this->enable && GetAsyncKeyState(VK_MENU)) {
 		localPlayer = getLocalPlayer();
@@ -12,15 +8,14 @@ void TriggerBot::refresh() {
 		entity = getEntity(localPlayer_inCross-1);
 		entity_team_num = getTeamNum(entity);
 
-		//Send an external click to shoot the target
-		// We don't want to shoot a person behind the wall. Use dormant!
+		// Send an external click to shoot the target
 		if ((localPlayer_inCross > 0 && localPlayer_inCross < 65) && (entity != NULL) && (entity_team_num != localPlayer_team)) {
-			Shoot();
+			this->_shoot();
 		}
 	}
 }
 
-void TriggerBot::Shoot() {
+void TriggerBot:: _shoot() {
 	//Generating random numbers
 	int delay[3] = { rand() % 15, rand() % 15, rand() % 15 };
 	for (int i = 0; i < 3; i++) {

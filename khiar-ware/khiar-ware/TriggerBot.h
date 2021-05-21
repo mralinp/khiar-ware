@@ -1,14 +1,12 @@
-#pragma once
-
 #include <random>
 #include <time.h>
 #include "ScriptBot.h"
 
 
-class TriggerBot:public ScriptBot{
-	void Shoot();
+class TriggerBot: public ScriptBot{
+
+	void _shoot();
 public:
-	TriggerBot(MemoryManager* memoryManager);
 	void refresh();
 };
 

@@ -140,7 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AutoBhop.cpp" />
-    <ClCompile Include="Logger.cpp" />
+    <ClCompile Include="main.c" />
     <ClCompile Include="MemoryManager.cpp" />
     <ClCompile Include="Radar.cpp" />
     <ClCompile Include="ScriptBot.cpp" />
@@ -150,7 +150,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AutoBhop.h" />
-    <ClInclude Include="Logger.h" />
     <ClInclude Include="MemoryManager.h" />
     <ClInclude Include="Offsets.h" />
     <ClInclude Include="Radar.h" />

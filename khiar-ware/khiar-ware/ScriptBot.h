@@ -1,10 +1,12 @@
-#pragma once
-
 #include "MemoryManager.h"
 #include "Offsets.h"
 
+#ifndef SCRIPTBOT_H
+#define SCRIPTBOT_H
+
 class ScriptBot{
 protected:
+
 	bool enable;
 	DWORD glowIdx;
 	DWORD health;
@@ -27,8 +29,12 @@ protected:
 	DWORD getFFlags();
 	
 public:
-	ScriptBot(MemoryManager* mem);
+
+	ScriptBot();
 	virtual void refresh() = 0;
 	bool status();
 	void toggle();
+
 };
+
+#endif

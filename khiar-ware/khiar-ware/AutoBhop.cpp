@@ -1,9 +1,5 @@
 #include "AutoBhop.h"
 
-AutoBhop::AutoBhop(MemoryManager* memoryManager): ScriptBot(memoryManager) {
-	enable = false;
-}
-
 void AutoBhop::refresh() {
 	
 	if (enable && GetAsyncKeyState(VK_SPACE)){
@@ -16,5 +12,5 @@ void AutoBhop::refresh() {
 }
 
 void AutoBhop::forceJump() {
-	mem->write(mem->get_client_base() + signitures::dwForceJump, 6);
+	mem->write(mem->getClientBaseAddr() + signitures::dwForceJump, 6);
 }

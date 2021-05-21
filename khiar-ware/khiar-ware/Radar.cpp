@@ -1,8 +1,5 @@
 #include "Radar.h"
 #include <iostream>
-Radar::Radar(MemoryManager* memoryManager):ScriptBot(memoryManager) {
-	this->enable = false;
-}
 
 void Radar::refresh() {
 	if (this->enable) {

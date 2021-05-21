@@ -1,6 +1,6 @@
 #include "ScriptBot.h"
 
-ScriptBot::ScriptBot(MemoryManager* memoryManager) : mem{memoryManager} {
+ScriptBot::ScriptBot(){
 
 	enable = false;
 	glowIdx = 0x00;
@@ -13,6 +13,7 @@ ScriptBot::ScriptBot(MemoryManager* memoryManager) : mem{memoryManager} {
 	localPlayer_team = 0x00;
 	fFlags = 0x00;
 	glowObj = 0x00;
+	this->mem = new MemoryManager();
 
 }
 
@@ -35,7 +36,7 @@ DWORD ScriptBot::getTeamNum(DWORD player) {
 
 
 DWORD ScriptBot::getLocalPlayer() {
-	return mem->read<DWORD>(mem->get_client_base() + signitures::dwLocalPlayer);
+	return mem->read<DWORD>(mem->getClientBaseAddr() + signitures::dwLocalPlayer);
 }
 
 DWORD ScriptBot::getIcrosshair(DWORD player) {
@@ -43,7 +44,7 @@ DWORD ScriptBot::getIcrosshair(DWORD player) {
 }
 
 DWORD ScriptBot::getEntity(DWORD entityNum){
-	return mem->read<DWORD>(mem->get_client_base() + signitures::dwEntityList + entityNum * 0x10);
+	return mem->read<DWORD>(mem->getClientBaseAddr() + signitures::dwEntityList + entityNum * 0x10);
 }
 
 

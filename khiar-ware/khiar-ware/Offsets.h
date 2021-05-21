@@ -1,4 +1,5 @@
-#pragma once
+#ifndef OFFSETS_H
+#define OFFSETS_H
 
 #include <windows.h>
 
@@ -9,7 +10,7 @@ namespace signitures {
 	const DWORD clientstate_last_outgoing_command = 19756 ;
 	const DWORD clientstate_net_channel = 156 ;
 	const DWORD convar_name_hash_table = 192760 ;
-	const DWORD dwClientState = 5828580 ;
+	const DWORD dwClientState = 5808100 ;
 	const DWORD dwClientState_GetLocalPlayer = 384 ;
 	const DWORD dwClientState_IsHLTV = 19784 ;
 	const DWORD dwClientState_Map = 652 ;
@@ -18,52 +19,53 @@ namespace signitures {
 	const DWORD dwClientState_PlayerInfo = 21184 ;
 	const DWORD dwClientState_State = 264 ;
 	const DWORD dwClientState_ViewAngles = 19856 ;
-	const DWORD dwEntityList = 81394644 ;
-	const DWORD dwForceAttack = 52236596 ;
-	const DWORD dwForceAttack2 = 52236608 ;
-	const DWORD dwForceBackward = 52236680 ;
-	const DWORD dwForceForward = 52236692 ;
-	const DWORD dwForceJump = 86285108 ;
-	const DWORD dwForceLeft = 52236560 ;
-	const DWORD dwForceRight = 52236548 ;
-	const DWORD dwGameDir = 6477816 ;
-	const DWORD dwGameRulesProxy = 86756908 ;
-	const DWORD dwGetAllClasses = 14351732 ;
-	const DWORD dwGlobalVars = 5827816 ;
-	const DWORD dwGlowObjectManager = 86933936 ;
-	const DWORD dwInput = 85922232 ;
-	const DWORD dwInterfaceLinkList = 9714772 ;
-	const DWORD dwLocalPlayer = 14189244 ;
-	const DWORD dwMouseEnable = 14212704 ;
-	const DWORD dwMouseEnablePtr = 14212656 ;
-	const DWORD dwPlayerResource = 52229264 ;
-	const DWORD dwRadarBase = 85805388 ;
-	const DWORD dwSensitivity = 14212348 ;
-	const DWORD dwSensitivityPtr = 14212304 ;
-	const DWORD dwSetClanTag = 565664 ;
-	const DWORD dwViewMatrix = 81335508 ;
-	const DWORD dwWeaponTable = 85924984 ;
+	const DWORD dwEntityList = 81424908 ;
+	const DWORD dwForceAttack = 52262708 ;
+	const DWORD dwForceAttack2 = 52262720 ;
+	const DWORD dwForceBackward = 52262780 ;
+	const DWORD dwForceForward = 52262792 ;
+	const DWORD dwForceJump = 86315004 ;
+	const DWORD dwForceLeft = 52262816 ;
+	const DWORD dwForceRight = 52262804 ;
+	const DWORD dwGameDir = 6457344 ;
+	const DWORD dwGameRulesProxy = 86786796 ;
+	const DWORD dwGetAllClasses = 14376988 ;
+	const DWORD dwGlobalVars = 5807336 ;
+	const DWORD dwGlowObjectManager = 86963912 ;
+	const DWORD dwInput = 85952464 ;
+	const DWORD dwInterfaceLinkList = 9731060 ;
+	const DWORD dwLocalPlayer = 14213836 ;
+	const DWORD dwMouseEnable = 14237296 ;
+	const DWORD dwMouseEnablePtr = 14237248 ;
+	const DWORD dwPlayerResource = 52255424 ;
+	const DWORD dwRadarBase = 85835652 ;
+	const DWORD dwSensitivity = 14236940 ;
+	const DWORD dwSensitivityPtr = 14236896 ;
+	const DWORD dwSetClanTag = 565680 ;
+	const DWORD dwViewMatrix = 81365796 ;
+	const DWORD dwWeaponTable = 85955216 ;
 	const DWORD dwWeaponTableIndex = 12892 ;
-	const DWORD dwYawPtr = 14211776 ;
-	const DWORD dwZoomSensitivityRatioPtr = 14232928 ;
-	const DWORD dwbSendPackets = 881210 ;
+	const DWORD dwYawPtr = 14236368 ;
+	const DWORD dwZoomSensitivityRatioPtr = 14257520 ;
+	const DWORD dwbSendPackets = 882586 ;
 	const DWORD dwppDirect3DDevice9 = 684112 ;
-	const DWORD find_hud_element = 668921472 ;
-	const DWORD force_update_spectator_glow = 3858930 ;
+	const DWORD find_hud_element = 796719616 ;
+	const DWORD force_update_spectator_glow = 3866106 ;
 	const DWORD interface_engine_cvar = 256492 ;
-	const DWORD is_c4_owner = 3910832 ;
+	const DWORD is_c4_owner = 3918400 ;
 	const DWORD m_bDormant = 237 ;
 	const DWORD m_flSpawnTime = 41840 ;
 	const DWORD m_pStudioHdr = 10572 ;
-	const DWORD m_pitchClassPtr = 85806056 ;
-	const DWORD m_yawClassPtr = 14211776 ;
-	const DWORD model_ambient_min = 5840988 ;
-	const DWORD set_abs_angles = 1967536 ;
-	const DWORD set_abs_origin = 1967088 ;
+	const DWORD m_pitchClassPtr = 85836320 ;
+	const DWORD m_yawClassPtr = 14236368 ;
+	const DWORD model_ambient_min = 5820508 ;
+	const DWORD set_abs_angles = 1969024 ;
+	const DWORD set_abs_origin = 1968576 ;
 };
+
 namespace netvars {
 	const DWORD cs_gamerules_data = 0 ;
-	const DWORD m_ArmorValue = 45944 ;
+	const DWORD m_ArmorValue = 45948 ;
 	const DWORD m_Collision = 800 ;
 	const DWORD m_CollisionGroup = 1140 ;
 	const DWORD m_Local = 12220 ;
@@ -74,13 +76,15 @@ namespace netvars {
 	const DWORD m_SurvivalRules = 3328 ;
 	const DWORD m_aimPunchAngle = 12332 ;
 	const DWORD m_aimPunchAngleVel = 12344 ;
-	const DWORD m_angEyeAnglesX = 45948 ;
-	const DWORD m_angEyeAnglesY = 45952 ;
+	const DWORD m_angEyeAnglesX = 45952 ;
+	const DWORD m_angEyeAnglesY = 45956 ;
+	const DWORD m_bBombDefused = 10672 ;
 	const DWORD m_bBombPlanted = 2469 ;
+	const DWORD m_bBombTicking = 10624 ;
 	const DWORD m_bFreezePeriod = 32 ;
 	const DWORD m_bGunGameImmunity = 14660 ;
-	const DWORD m_bHasDefuser = 45960 ;
-	const DWORD m_bHasHelmet = 45932 ;
+	const DWORD m_bHasDefuser = 45964 ;
+	const DWORD m_bHasHelmet = 45936 ;
 	const DWORD m_bInReload = 12965 ;
 	const DWORD m_bIsDefusing = 14640 ;
 	const DWORD m_bIsQueuedMatchmaking = 116 ;
@@ -112,17 +116,19 @@ namespace netvars {
 	const DWORD m_flSimulationTime = 616 ;
 	const DWORD m_flTimerLength = 10644 ;
 	const DWORD m_hActiveWeapon = 12024 ;
+	const DWORD m_hBombDefuser = 10676 ;
 	const DWORD m_hMyWeapons = 11768 ;
 	const DWORD m_hObserverTarget = 13196 ;
 	const DWORD m_hOwner = 10700 ;
 	const DWORD m_hOwnerEntity = 332 ;
+	const DWORD m_hViewModel = 13048 ;
 	const DWORD m_iAccountID = 12232 ;
 	const DWORD m_iClip1 = 12900 ;
 	const DWORD m_iCompetitiveRanking = 6788 ;
 	const DWORD m_iCompetitiveWins = 7048 ;
-	const DWORD m_iCrosshairId = 46052 ;
+	const DWORD m_iCrosshairId = 46056 ;
+	const DWORD m_iDefaultFOV = 13100 ;
 	const DWORD m_iEntityQuality = 12204 ;
-	const DWORD m_iFOV = 12772 ;
 	const DWORD m_iFOVStart = 12776 ;
 	const DWORD m_iGlowIndex = 42040 ;
 	const DWORD m_iHealth = 256 ;
@@ -134,11 +140,13 @@ namespace netvars {
 	const DWORD m_iState = 12888 ;
 	const DWORD m_iTeamNum = 244 ;
 	const DWORD m_lifeState = 607 ;
+	const DWORD m_nBombSite = 10628 ;
 	const DWORD m_nFallbackPaintKit = 12744 ;
 	const DWORD m_nFallbackSeed = 12748 ;
 	const DWORD m_nFallbackStatTrak = 12756 ;
 	const DWORD m_nForceBone = 9868 ;
 	const DWORD m_nTickBase = 13360 ;
+	const DWORD m_nViewModelIndex = 10688 ;
 	const DWORD m_rgflCoordinateFrame = 1092 ;
 	const DWORD m_szCustomName = 12348 ;
 	const DWORD m_szLastPlaceName = 13748 ;
@@ -147,4 +155,7 @@ namespace netvars {
 	const DWORD m_vecVelocity = 276 ;
 	const DWORD m_vecViewOffset = 264 ;
 	const DWORD m_viewPunchAngle = 12320 ;
+	const DWORD m_zoomLevel = 13264 ;
 };
+
+#endif

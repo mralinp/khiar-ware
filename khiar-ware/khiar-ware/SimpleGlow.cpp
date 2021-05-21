@@ -15,21 +15,16 @@ struct SimpleGlow::Glow_Struct {
 	int glow_style;
 };
 
-SimpleGlow::SimpleGlow(MemoryManager* memoryManager) : ScriptBot(memoryManager){
-	enable = false;
-}
 
 void SimpleGlow::refresh() {
 	Glow_Struct gst;
-	if (this->enable == ON) {
+	if (this->enable) {
 		localPlayer = getLocalPlayer();
 		localPlayerTeamNum = getTeamNum(localPlayer);
 		glowObj = getGlowObj();
-		// Assume that at must we have 64 players, loop over all and 64 is not a such thing that cause extra complexity for our code
-		for (DWORD i = 0; i < 33 ; i++) {
+		for (DWORD i = 0; i < 32 ; i++) {
 			entity = getEntity(i);
 			// This can be 0x00 due to MemoryManager::read function itself!
-			// we are always counting 0 to 64 so if the server has 24 client at most, the values of 24, 25, ..., 64 will be null or 0x00 
 			if (entity != NULL) {
 				glowIdx = getGlowIdx(entity);
 				entity_team_num = getTeamNum(entity);
@@ -50,7 +45,7 @@ void SimpleGlow::refresh() {
 }
 
 DWORD SimpleGlow::getGlowObj(){
-	return mem->read<DWORD>(mem->get_client_base() + signitures::dwGlowObjectManager);
+	return mem->read<DWORD>(mem->getClientBaseAddr() + signitures::dwGlowObjectManager);
 }
 
 DWORD SimpleGlow::getGlowIdx(DWORD player) {
