@@ -89,7 +89,7 @@ int main() {
 			Sleep(3000);
 			break;
 		}
-		Sleep(5);
+		Sleep(1);
 	}
 	return 0;
 	

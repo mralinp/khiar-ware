@@ -22,7 +22,7 @@ void SimpleGlow::refresh() {
 		localPlayer = getLocalPlayer();
 		localPlayerTeamNum = getTeamNum(localPlayer);
 		glowObj = getGlowObj();
-		for (DWORD i = 0; i < 32 ; i++) {
+		for (DWORD i = 1; i < 32 ; i++) {
 			entity = getEntity(i);
 			// This can be 0x00 due to MemoryManager::read function itself!
 			if (entity != NULL) {
