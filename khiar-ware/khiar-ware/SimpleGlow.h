@@ -6,7 +6,7 @@
 class SimpleGlow: public ScriptBot{
 
 	struct Glow_Struct;
-	DWORD getGlowObj();
+	DWORD getGlowObjManager();
 	DWORD getGlowIdx(DWORD player);
 
 public:
