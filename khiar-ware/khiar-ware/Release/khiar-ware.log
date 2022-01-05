@@ -1,9 +1,0 @@
-﻿  SimpleGlow.cpp
-C:\Users\alina\Source\repos\KhiarWare\khiar-ware\khiar-ware\SimpleGlow.cpp(48,21): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\alina\Source\repos\KhiarWare\khiar-ware\khiar-ware\SimpleGlow.cpp(49,29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  Generating code
-  1 of 259 functions ( 0.4%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    1 functions had inline decision re-evaluated but remain unchanged
-  Finished generating code
-  khiar-ware.vcxproj -> C:\Users\alina\Source\repos\KhiarWare\khiar-ware\Release\khiar-ware.exe
