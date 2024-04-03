@@ -28,7 +28,8 @@ foo@bar~:$ pip install requests
 foo@bar~:$ python updater.py
 ```
 
-Finally create an empty visual studio project and add all of the source codes into the project (files with `.h` to `Headers` and the `.cpp` files into the `Sources`). Now you are all set, press `run/debug` button to execute, enjoy!
+Finally, open the `khiar-ware/khiar-ware.sln` using visual sudio and press build/debug and enjoy.
+> Before running the code make sure you are building for x86 instruction-set and not x64 because, csgo is a 32bit software and has 32bit addresses and offsets.
 
 
 ## Insecure Mode
