@@ -1,42 +1,70 @@
-# KhiarWare(Windows Version)
-## WallHack + TriggerBot + RadarHack + AutoBhop
-This project is an example of game hacking, and it's created to share the personal experience with other enthusiasts in this branch of software security.<br/>
-I made this only for educational porpuses and i'm not responsible for any other subversive applications.
+# KhiarWare (Windows Version)
 
-As you might know, game hacking in online games is not allowed owing to annoying other players. Normal players who just want to have fun with games, don't want to face a demon hacker in their fun times, so game developers will respond if you do somthing to annoing to other players such as griffing as well as cheating (hacking) in game. In other words cheating in online games will cause your account be **banned** (e.g VACation on steam platform).
+## Game Modification Tool for CS:GO
+
+### Features: WallHack + TriggerBot + RadarHack + AutoBhop
+
+⚠️ **IMPORTANT WARNING**: This project is for educational purposes only to demonstrate game security concepts. Using cheats in online games can result in permanent bans. The author is not responsible for any misuse of this code.
 
 ![menu image](demo.png)
 
+## Setup Instructions
 
-To run and use the project, first, run the updater.py to update the offset addresses to the latest version of CS:GO using python3. After that use visual studio to build and run the source code.
+### Prerequisites
 
-> Note: To be safe while testing and running this code in game, just run the game in **insecure mode**. That turns off the Valve anti-cheat when running the game, but you can't join any VAC secure servers while launching the game on this mode. To do this just look at [Insecure Mode](#insecure-mode).
+- Python 3 with `requests` library
+- Visual Studio (configured for C++ development)
+- CS:GO installed through Steam
 
-# How to use this code
+### Installation
 
-First of all download the source codes:
+1. Clone the repository:
 
-```console
-foo@bar~:$ git clone https://github.com/mralinp/KhiarWare.git  
+```bash
+git clone https://github.com/mralinp/KhiarWare.git
 ```
 
-Then run `updater.py`, this will automatically updates the offset values inside `Source/Offsets.h` file.
-- You have to have python `requests` library installed in you python environment to be able to run `updater.py`.
+2. Install Python dependencies:
 
-```console
-foo@bar~:$ pip install requests
-foo@bar~:$ python updater.py
+```bash
+pip install requests
 ```
 
-Finally, open the `khiar-ware/khiar-ware.sln` using visual sudio and press build/debug and enjoy.
-> Before running the code make sure you are building for x86 instruction-set and not x64 because, csgo is a 32bit software and has 32bit addresses and offsets.
+3. Update offset values:
 
+```bash
+python updater.py
+```
 
-## Insecure Mode
-### For those who doesn't want to risk and it's recommened by me.
-To run this code to see how it's working without the rish of getting VAC banned, you have to run the game on `insecure` mode. To do this, open steam, go to library, `right-click` on **CS:GO** icon and choose properties, in `General` tab you can see `Launch options` button, click on that and add `-insecure` at the end of the line, done, press `ok` and close the propeties tab.
+4. Build the project:
 
-just remember that for playing normally after testing this code, just remove `-insecure` from `launch options`, this will enables anti-cheat and you are able to play at VAC secure servers.
-If you saw that every thing is fine, and it's working good, you can use this code on `normal mode`, **competetive** or anywhere else, but at you own risk, be careful of being obvious and remember that overwatch is everywhere.
+- Open `khiar-ware/khiar-ware.sln` in Visual Studio
+- Ensure the build configuration is set to **x86** (32-bit)
+- Build the solution
 
-> Attention!: Due to CS:GO updates, this source code needs to be updated and adapted with the newest changes, but you can stiil use some parts as a sample of CS:GO cheat.
+## Safe Testing (Recommended)
+
+To safely test the code without risking a VAC ban, use CS:GO's insecure mode:
+
+1. Open Steam
+2. Right-click CS:GO in your library
+3. Select Properties
+4. Under "Launch Options", add `-insecure`
+5. Click OK
+
+In insecure mode:
+
+- VAC will be disabled
+- You cannot join VAC-secured servers
+- Perfect for testing and development
+
+To return to normal play:
+
+- Remove `-insecure` from launch options
+- Restart CS:GO
+
+⚠️ **VAC Ban Warning**: Using this code on VAC-secured servers will likely result in a permanent game ban. The author takes no responsibility for banned accounts.
+
+## Current Status
+
+**Note**: Due to frequent CS:GO updates, some features may need adjustment to work with the latest game version. This code serves primarily as an educational reference for game security concepts.
